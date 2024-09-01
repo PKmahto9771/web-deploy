@@ -29,7 +29,7 @@ services:
   request-handler:
     image: request-handler:1.0
     ports:
-      - "3002:3001"  # Exposes port 3001 of the container as port 3002 on the host
+      - "3001:3001"
     environment:
       - S3_ACCESS_KEY_ID=28cc04cc25ebf7a76e0000811f95e8b4
       - S3_SECRET_ACCESS_KEY=e91032aa213842333833351700bba1c30e490af87605dc97af78d7e889415929

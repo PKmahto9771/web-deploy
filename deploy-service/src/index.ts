@@ -2,6 +2,7 @@
 import { createClient, commandOptions } from "redis";
 import { copyFinalDist, downloadS3Folder } from "./aws";
 import { buildProject } from "./utils";
+console.log("redis host", process.env.REDIS_HOST)
 const publisher = createClient({
     url: `redis://${process.env.REDIS_HOST || 'redis'}:6379`
   });
